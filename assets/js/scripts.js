@@ -6,17 +6,22 @@ function removeHoverEffect() {
     document.body.style.backgroundColor = 'transparent'; // return to original on mouse out
 }
 
-// Add event listeners to dropdowns to handle hover on touch devices 
 document.addEventListener('DOMContentLoaded', function () {
     let dropdowns = document.querySelectorAll('.dropdown');
+
     dropdowns.forEach(function(dropdown) {
         dropdown.addEventListener('click', function() {
             let dropdownContent = this.querySelector('.dropdown-content');
-            if (dropdownContent.style.display === 'block') {
-                dropdownContent.style.display = 'none';
-            } else {
-                dropdownContent.style.display = 'block';
-            }
+            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Optionally: Handle dropdown with hover, considering non-touch devices
+        dropdown.addEventListener('mouseenter', function() {
+            this.querySelector('.dropdown-content').style.display = 'block';
+        });
+
+        dropdown.addEventListener('mouseleave', function() {
+            this.querySelector('.dropdown-content').style.display = 'none';
         });
     });
 });
