@@ -1,6 +1,21 @@
 ---
 layout: default
-title: Home
+title: Splash
 ---
-<h1>Welcome to MUSUME's Website</h1>
-<p>Your intro text here.</p>
+
+<div class="splash-container">
+    <img src="/assets/splash.jpg" alt="Background Image" class="splash-background">
+    <a href="{{ site.baseurl }}/index.html" class="enter-btn">Enter</a>
+</div>
+
+<script>
+    const button = document.querySelector('.enter-btn');
+
+    button.addEventListener('mouseover', () => {
+        button.style.backgroundColor = 'color1'; // replace color1 with your desired color
+    });
+
+    button.addEventListener('mouseout', () => {
+        button.style.backgroundColor = 'color2'; // replace color2 with your original color
+    });
+</script>
