@@ -1,0 +1,9 @@
+- image_path: "/assets/images/gallery-img1.jpg"
+  alt_text: "Artwork 1"
+  description: "Description of Artwork 1"
+
+- image_path: "/assets/images/gallery-img2.jpg"
+  alt_text: "Artwork 2"
+  description: "Description of Artwork 2"
+
+# ... and so on
