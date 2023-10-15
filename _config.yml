@@ -1,5 +1,5 @@
 title: MUSUME Portfolio
-baseurl: "/musume-portfolio" # update this based on your repo name
+baseurl: "/musume-portfolio/" # update this based on your repo name
 url: "https://norainthere.github.io" # update this with your username
 theme: jekyll-theme-cayman
 plugins:
