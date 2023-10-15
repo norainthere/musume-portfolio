@@ -5,17 +5,17 @@ title: Splash
 
 <div class="splash-container">
     <img src="/assets/splash.jpg" alt="Background Image" class="splash-background">
-    <a href="{{ site.baseurl }}/index.html" class="enter-btn">Enter</a>
+    <a href="{{ site.baseurl }}/home.html" class="enter-btn">Enter</a>
 </div>
 
 <script>
     const button = document.querySelector('.enter-btn');
 
     button.addEventListener('mouseover', () => {
-        button.style.backgroundColor = 'color1'; // replace color1 with your desired color
+        button.style.backgroundColor = '#00ff00'; // Example: bright green when hovered
     });
 
     button.addEventListener('mouseout', () => {
-        button.style.backgroundColor = 'color2'; // replace color2 with your original color
+        button.style.backgroundColor = '#ffffff'; // Example: white when not hovered
     });
 </script>
